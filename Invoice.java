@@ -21,7 +21,7 @@ public class Invoice
    */
    public void addItem(LineItem item)
    {
-	    boolean DEBUG = true;
+	    boolean DEBUG = false; //set true for console command debugging
 		// check to see if the item added is already in the ArrayList
 		if (items.size() == 0) {
 			items.add(item);

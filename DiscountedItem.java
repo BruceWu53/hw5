@@ -30,15 +30,20 @@ public class DiscountedItem implements LineItem {
 	public int compareTo(LineItem o) {
 		String string1 = item.toString() + " (Discount " + discount + "%)";
 		String string2 = o.toString();
+		boolean DEBUG = false;
 		if ((item.toString() + " (Discount " + discount + "%)").equalsIgnoreCase(o.toString())) {
+			if (DEBUG) {
 			System.out.println("String 1: " + string1);
 			System.out.println("String 2: " + string2);
 			System.out.println("strings are equal");
+			}
 			return 1;
 		} else {
+			if (DEBUG) {
 			System.out.println("String 1: " + string1);
 			System.out.println("String 2: " + string2);
 			System.out.println("strings are not equal");
+			}
 			return 0;
 		}
 	}

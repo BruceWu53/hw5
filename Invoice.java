@@ -51,7 +51,9 @@ public class Invoice
 				return;
 			} else if (item.compareTo(items.get(0)) == 0) { 
 				// else, add it to ArrayList
+				if (DEBUG) {
 				System.out.println("Size of array: " + items.size());
+				}
 				if (items.size() == 1) {
 				items.add(item);
 				// Notify all observers of the change to the invoice
